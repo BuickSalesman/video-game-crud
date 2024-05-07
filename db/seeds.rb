@@ -7,7 +7,7 @@
 #   Character.create(name: "Luke", movie: movies.first)
 
 Game.create(
-  title: "Anodyne 2",
+  title: "Anodyne 2: Return to Dust",
   image: "https://c8.alamy.com/comp/GEE05T/a-happy-chef-with-handlebar-mustache-showing-his-approval-GEE05T.jpg",
   description: "Anodyne 2: Return to Dust is an indie adventure game developed by Analgesic Productions. It combines 2D and 3D gameplay elements within a surreal narrative-driven experience. Set in a world where characters traverse both real and abstract realms, players take on the role of Nova, a Nano Cleaner tasked with exploring diverse environments, solving puzzles, and confronting surreal challenges. The game received praise for its unique blend of gameplay mechanics, captivating storytelling, and distinctive visual style.",
   release_date: Date.new(2019, 8, 12),
@@ -28,7 +28,7 @@ Game.create(
   platform: "Windows, macOS, Switch, PS4, XB1, XBX/S",
 )
 Game.create(
-  title: "Hearthstone",
+  title: "Hearthstone: Heroes of Warcraft",
   image: "https://c8.alamy.com/comp/J68N52/bread-cook-chef-breaking-fracture-breakage-fraction-restaurant-bread-J68N52.jpg",
   description: "Hearthstone is a digital collectible card game developed and published by Blizzard Entertainment. Set in the Warcraft universe, players choose a hero with a unique set of cards and engage in turn-based battles against other players or AI opponents. The objective is to reduce the opponent's health to zero using a combination of spells, minions, and other abilities. With a wide variety of cards, strategic depth, and regular updates introducing new content, Hearthstone offers an engaging and accessible experience for both casual and competitive players alike.",
   release_date: Date.new(2014, 3, 11),
