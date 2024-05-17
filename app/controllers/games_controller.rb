@@ -15,7 +15,7 @@ class GamesController < ApplicationController
     render :show
   end
 
-  def show
+  def showcod
     @game = Game.find_by(id: params[:id])
     render :show
   end
@@ -38,3 +38,5 @@ class GamesController < ApplicationController
     render json: { message: "Game destroyed successfully" }
   end
 end
+
+# i worked on this today but didnt make any progress
