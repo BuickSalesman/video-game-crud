@@ -15,7 +15,7 @@ class GamesController < ApplicationController
     render :show
   end
 
-  def showcod
+  def show
     @game = Game.find_by(id: params[:id])
     render :show
   end
@@ -39,4 +39,35 @@ class GamesController < ApplicationController
   end
 end
 
-# i worked on this today but didnt make any progress
+#WE HAVE CONNECTION TO THE FRONT, getting a 500 error not sure where to go but the datepicker is linked to the below code for sure!!!
+
+def games_by_date
+  api_endpoint = "https://api.igdb.com/v4/games"
+
+  request_headers = {
+    headers: {
+      "Client-ID" => ENV["TWITCH_CLIENT_ID"],
+      "Authorization" => "Bearer #{ENV["IGDB_ACCESS_TOKEN"]}",
+      "x-user-agent" => "ruby-apicalypse",
+    },
+  }
+
+  api = Apicalypse.new(api_endpoint, request_headers)
+
+  response = api
+    .fields(:name, :total_rating)
+    .where(category: 1)
+    .search("Call of Duty")
+    .limit(2)
+    .request
+
+  response
+end
+
+# # api response
+
+# [
+#   { "id" => 107299, "name" => "Call of Duty: WWII - Shadow War", "total_rating" => 75.0 },
+#   { "id" => 57700, "name" => "Call of Duty: Infinite Warfare - Retribution", "total_rating" => 60.0 },
+# ]
+# # 060124 i worked on this today but didnt make any progress

@@ -44,6 +44,8 @@ gem "bootsnap", require: false
 
 gem "jwt"
 gem "rack-cors"
+gem "ruby-apicalypse"
+gem "igdb"
 # Use Sass to process CSS
 # gem "sassc-rails"
 
