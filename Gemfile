@@ -46,6 +46,8 @@ gem "jwt"
 gem "rack-cors"
 gem "ruby-apicalypse"
 gem "igdb"
+gem "dotenv-rails", groups: [:development, :test]
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
